@@ -21,6 +21,12 @@ public class loginController {
 	public String login(@ModelAttribute LoginDTO dto, HttpServletRequest req) {
 		String msg=service.validateAndlogin(dto);
 		logger.info("called service method");
+		if(msg.equals("invalid password")|| msg.equals("user not found")|| msg.equals("dto is null")) {
+			req.setAttribute("message", msg);
+			return "login.jsp";
+		}else {
+		
+		
 		req.setAttribute("message", msg);
 		
 		
@@ -28,6 +34,7 @@ public class loginController {
 		
 		
 		return "home.jsp";
+		}
 		
 	}
 	

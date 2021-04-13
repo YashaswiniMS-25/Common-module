@@ -6,6 +6,8 @@
 <head>
 <link rel="stylesheet" href="mystylesheet.css">
 <script type="text/javascript" src="validation.js" ></script>
+
+
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -16,11 +18,11 @@
 				style="font-family: Cursive; color: rgb(255, 140, 0);">
 				Eco Club 
 			</h1>
-			<form action="header">
+			
 
-				<a href="logout.jsp"><input type="image" src="log.png" alt="button" class="button"
+				<a href="login.jsp"><input type="image" src="log.png" alt="button" class="button"
 					style="height: 30px; width: 65px;  margin: 10px 15px; position: relative; top: 20%; left: 40%;"></a>
-			</form>
+			
 
 
 		</div>

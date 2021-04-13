@@ -13,6 +13,11 @@ table, th, td {
 	border-collapse: collapse;
 }
 </style>
+<script type = "text/javascript" >  
+    function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+</script>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -28,7 +33,7 @@ table, th, td {
 				style="text-align: center;"><input type="button" value="Update"style="border-radius: 8px;font-size: 25px;"></a>
 				
 
-			<a href="logout.jsp"><input type="image" src="log.png" alt="button" class="button"
+			<a href="login.jsp"><input type="image" src="log.png" alt="button" class="button"
 				style="height: 30px; width: 65px; margin: 10px 15px; position: relative; top: 20%; left: 30%;"></a>
 
 

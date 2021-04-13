@@ -5,6 +5,11 @@
 <html>
 <head>
 <link rel="stylesheet" href="mystylesheet.css">
+<script type = "text/javascript" >  
+    function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+</script> 
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>

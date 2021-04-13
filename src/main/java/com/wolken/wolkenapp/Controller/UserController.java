@@ -31,10 +31,12 @@ public class UserController {
 		logger.info("inside save function in usercontroller");
 		String message = userservice.validateAndSave(userdto);
 		logger.info(message);
+		
 
 		req.setAttribute("message", message);
 		logger.info("setting attribute");
 		return "login.jsp";
+		
 	
 	}
 

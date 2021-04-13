@@ -5,6 +5,11 @@
 <head>
 <link rel="stylesheet" href="mystylesheet.css">
 <script type="text/javascript" src="validation.js"></script>
+<script type = "text/javascript" >  
+    function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+</script>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
@@ -15,11 +20,11 @@
 				style="font-family: Cursive; color: rgb(255, 140, 0);">
 				Eco Club 
 			</h1>
-			<form action="header">
+			
 
-				<input type="image" src="log.png" alt="submit" class="button"
-					style="height: 30px; width: 65px;  margin: 10px 15px; position: relative; top: 20%; left: 40%;">
-			</form>
+				<a href="login.jsp"><input type="image" src="log.png" alt="button" class="button"
+					style="height: 30px; width: 65px;  margin: 10px 15px; position: relative; top: 20%; left: 40%;"></a>
+			
 
 
 		</div>
